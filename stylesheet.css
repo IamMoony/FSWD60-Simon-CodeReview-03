@@ -71,12 +71,13 @@
 .box {
 	width: 300px;
 	height: 300px;
+	border:  1px solid black;
 }
 
-.box1 {
+/* .box1 {
 	border:  1px solid black;
-	/* margin: auto auto auto 25px; */
-}
+	margin: auto auto auto 25px;
+} */
 
 #footer {
 	color:  white;
@@ -107,6 +108,17 @@
 
 #footer li {
 	padding-left: 15px;
+}
+
+#form {
+
+	background-color: #CECECE;
+	opacity: 0.5;
+	margin: 0 auto;
+	width: 900px;
+	height: 500px;
+ 	border: 1px solid black;
+ 	/* margin-top: 145px; */
 }
 
 
