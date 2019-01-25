@@ -4,7 +4,7 @@
 }
 
 #header {
-	border: 1px solid black;
+	border: 1px solid black; /* border just for orientation */
 	display: flex;
 	justify-content: space-around;
 	background-color: #FFF3F3;
@@ -16,6 +16,12 @@
 
 #headerbanner {
 	margin: 20px 20px 20px 20px;
+	/* opacity: 0.3; */
+}
+
+#navbar {
+	margin: 0px;
+	padding: 0px;
 }
 
 #navbar ul {
@@ -30,5 +36,38 @@
 	text-decoration: none;
 	padding: 0px 0px 0px 15px;
 	color: white;
+}
+
+#mainsection {
+	border: 1px solid black; /* border just for orientation */
+	background-color: lightgrey;
+	background-image: url('img/traffic-332857_1920.jpg');
+	background-size: cover;
+ 	margin:  0px;
+	padding: 0px;
+	height: 667px;
+
+}
+
+#heading-text {
+	color: white;
+}
+
+#main-text {
+	background-color: lightgrey;
+	margin: 0px;
+	padding: 5px;
+	text-align: center;
+}
+
+#midsection {
+	border: 1px solid black;
+	display: flex;
+	justify-content:  space-between;
+}
+
+.box1 {
+	border:  1px solid black;
+	/* margin: auto auto auto 25px; */
 }
 
