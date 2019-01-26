@@ -23,52 +23,72 @@
 			</span>
 			<div id="form">
 				<h4>Great coverage beigns with a custom quote</h4>
-				<div>
+				<div class=form_row>
 					<p>Your name:</p>
-					<input type="text name="name">
+					<input id="name" type="text name="name">
+					<p>Age:</p>
+					<input id="age" type="number" name="age" min="1">
 				</div>
-			</div>
-		</div> <!-- mainsection end -->
-		<div id="main-text">
-			<h2>Un-complicated car coverage</h2>
-			<p>Understanding your coverage options shouldn't be so hard.</p>
-			<p>We'll guide you through available coverage types,</p>
-			<p>starting with who and what is covered.</p>	
-		</div>
-		<div id="midsection">
-			<div class="box box1">
-				<p>What comes standard</p>
-				<p>The coverage you need</p>
-				<ul>
-					<li>Body Injury Liablility</li>
-					<li>Proper Damage</li>
-					<li>Medical Payments</li>
-				</ul><br>
-				<p>Benefits</p>
-				<p>12-month rate guarantee | 24/7 customer service | Lifetime Repair Guarantee</p>
-			</div>
-			<div class="box box1">
-				<p>What comes standard</p>
-				<p>The coverage you need</p>
-				<ul>
-					<li>Body Injury Liablility</li>
-					<li>Proper Damage</li>
-					<li>Medical Payments</li>
-				</ul><br>
-				<p>Benefits</p>
-				<p>12-month rate guarantee | 24/7 customer service | Lifetime Repair Guarantee</p>	
-			</div>
-		</div> <!-- midsection end -->
-		<footer id="footer">
-			<ul>
-				<li>home</li>
-				<li>team</li>
-			</ul>
-			<div id="footerimage">
-				<img src="img\logo-inv.png" alt="">
-			</div>
-			<p>Simon Blaha - CodeFactory 2018</p>
-		</footer>
-	</div><!-- container end -->
-</body>
-</html>
+				<p>Country:</p>
+				<form class="form_row" id="country_id" action="/action_page.php">
+					<select name="country">
+						<option value="austria">Austria</option>
+						<option value="austria">Hungary</option>
+						<option value="austria">Greece</option>
+					</select>
+					<p>Horse power of your car:</p>
+					<input id="horse_power" type="number" name="horse_power" min="50" max="1000">
+				</form><br>
+				<div id="calc_button">
+					<p>Calculate</p>
+				</div><br>
+					<div id="result">
+						
+					</div>
+							<div>	
+						</div>
+					</div>
+				</div> <!-- mainsection end -->
+				<div id="main-text">
+					<h2>Un-complicated car coverage</h2>
+					<p>Understanding your coverage options shouldn't be so hard.</p>
+					<p>We'll guide you through available coverage types,</p>
+					<p>starting with who and what is covered.</p>	
+				</div>
+				<div id="midsection">
+					<div class="box box1">
+						<p>What comes standard</p>
+						<p>The coverage you need</p>
+						<ul>
+							<li>Body Injury Liablility</li>
+							<li>Proper Damage</li>
+							<li>Medical Payments</li>
+						</ul><br>
+						<p>Benefits</p>
+						<p>12-month rate guarantee | 24/7 customer service | Lifetime Repair Guarantee</p>
+					</div>
+					<div class="box box1">
+						<p>What comes standard</p>
+						<p>The coverage you need</p>
+						<ul>
+							<li>Body Injury Liablility</li>
+							<li>Proper Damage</li>
+							<li>Medical Payments</li>
+						</ul><br>
+						<p>Benefits</p>
+						<p>12-month rate guarantee | 24/7 customer service | Lifetime Repair Guarantee</p>	
+					</div>
+				</div> <!-- midsection end -->
+				<footer id="footer">
+					<ul>
+						<li>home</li>
+						<li>team</li>
+					</ul>
+					<div id="footerimage">
+						<img src="img\logo-inv.png" alt="">
+					</div>
+					<p>Simon Blaha - CodeFactory 2018</p>
+				</footer>
+			</div><!-- container end -->
+		</body>
+		</html>

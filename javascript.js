@@ -21,6 +21,24 @@ function calculateInsurance(country_id, horse_power, age) {
 }
 
 function onButtonClick() {
-	var  div_country_id = document.getElementById("country_id");
+	var  get_country_id = document.getElementById("country_id");
+	var get_horse_power = document.getElementById("horse_power");
+	var get_age = document.getElementById("age");
+
+	var country_id = get.country_id.value;
+	var horse_power = get.horse_power.value;
+	var age = get.age.value;
+
+	var result = calculateInsurance(country_id, horse_power, age);
+
+	var get_result = document.getElementById("result");
+
+	get_result.innerHTML = result;
 }
 
+// Initialize Event
+
+document.addEventListener(function() {
+	var get_button = document.getElementById("calc_button");
+	get_button.addEventListener("click", onButtonClick);
+});
