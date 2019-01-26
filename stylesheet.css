@@ -1,10 +1,14 @@
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
 #container {
 	width: 990px;
 	margin: 0px auto;
 }
 
 #header {
-	border: 1px solid black; /* border just for orientation */
+	/* border: 1px solid black; */ /* border just for orientation */
 	display: flex;
 	/* justify-content: space-around; */
 	background-color: #FFF3F3;
@@ -39,8 +43,7 @@
 }
 
 #mainsection {
-	border: 1px solid black; /* border just for orientation */
-	/* background-color: lightgrey; */
+	border: 1px solid black; /* border just for orientation */ /* why is there a space if I remove border??? */
 	background-image: url('img/traffic-332857_1920.jpg');
 	background-size: cover;
  	margin:  0px;
@@ -51,6 +54,8 @@
 
 #heading-text {
 	color: white;
+	margin-left: 20px;
+	margin-top: 55px;
 }
 
 #main-text {
@@ -61,7 +66,7 @@
 }
 
 #midsection {
-	border: 1px solid black;
+	/* border: 1px solid black; */
 	display: flex;
 	justify-content: space-evenly;
 	margin-top: 50px;
@@ -71,7 +76,7 @@
 .box {
 	width: 300px;
 	height: 300px;
-	border:  1px solid black;
+	/* border:  1px solid black; */
 }
 
 /* .box1 {
@@ -110,9 +115,9 @@
 	padding-left: 15px;
 }
 
-#form {
-	background-color: #CECECE;
-	/* opacity: 0.3; */
+#form_wrapper {
+	background-color: white;
+	opacity: 0.7;
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -122,25 +127,85 @@
 	width: 900px;
 	height: 500px;
  	border: 1px solid black;
- 	/* margin-top: 145px; */
+ 	margin-top: 90px;
 }
 
-.form_row {
+/* .form_row {
 	display: flex;
+} */
+
+#form_wrapper h2 {
+	text-align: center;
 }
+
+.box_top {
+	display: flex;
+	flex-flow:  row;
+	justify-content: space-evenly;
+}
+
+.box_bottom {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-evenly;
+}
+
+.box_result {
+	text-align: center;
+}
+
+#name {
+	opacity: 1;
+	width: 150px;
+	height: 20px;
+	background-color: white; /* why is it not applying the background-color?? */
+}
+
+#age {
+	opacity: 1;
+	width: 150px;
+	height: 20px;
+	background-color: white;
+}
+
+#country_id {
+	opacity: 1;
+	width: 150px;
+	height: 20px;
+	background-color: white;
+}
+
+#horse_power {
+	opacity: 1;
+	width: 150px;
+	height: 20px;
+	background-color: white;
+}
+
+#box_calc {
+	margin: 0px auto;
+}
+
+#box_calc input {
+	text-align: center;
+}
+
+
 
 #calc_button {
 	background-color: green;
+	color:  white;
 	position: absolute;
 	opacity: 1;
-	width: 100px;
+	width: 250px;
 	height: 50px;
 }
 
 #result {
+/* 	border: 1px solid black;
 	background-color: yellow;
 	position: absolute;
-	width: 100px;
-	height: : 100px;
+	width: 200px;
+	height: : 200px; */
 }
 
