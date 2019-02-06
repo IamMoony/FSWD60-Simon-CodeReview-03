@@ -9,9 +9,9 @@ function calculateInsurance() {
 	var get_name = document.getElementById("full-name").value;
 	var get_country = document.getElementById("form-selection").value;
 	//if statement for each country
-	if(get_country == "austria") {
+	if(get_country == "Austria") {
 		document.getElementById("result").innerHTML = get_name + " ,your insurance costs: " + Math.floor(get_horse_power * 100 / get_age + 50);
-	} else if (get_country == "hungary") {
+	} else if (get_country == "Hungary") {
 		document.getElementById("result").innerHTML = get_name + " ,your insurance costs: " + Math.floor(get_horse_power * 120 / get_age + 100);
 	} else {
 	document.getElementById("result").innerHTML = get_name + " ,your insurance costs: " + Math.floor(get_horse_power * 150 / (get_age + 3) + 150);
