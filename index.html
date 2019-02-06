@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Car Insurance Calculator</title>
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <body>
@@ -23,41 +23,44 @@
 			<div id=heading-text>
 				<h2>Car Insurance</h2>
 			</div>
-			<div id="form_wrapper">
+			
+			<div id="form-wrapper">
+				<div id="form-heading">
 				<h2>Great coverage beigns with a custom quote</h2>
-					<div class="box_top">
-					<div id="box_name">
-					<b>Name:</b><br>
-					<input id="name" type="text" name="fullname">
+			</div>
+					<div class="form-row">
+						<label>
+							Your name:
+							<br>
+						<input type="text" id="full-name" name="full-name">
+					</label>
+					<label>
+						Age:
+						<br>
+							<input type="number" id="age" name="age" min="16" max="150">
+					</label>
+					
 					</div>
-					<div id="box_age">
-					<b>Age:</b>
-					<br>
-					<input id="age" type="number" name="age" min="16" max="150"><br>
+					<div class="form-row">
+						<label>Select your country:
+							<br>
+							<select name="" id="form-selection">
+							<option value="">Austria</option>
+							<option value="">Hungary</option>
+							<option value="">Greece</option>
+						</select>
+						</label>
+						<label>
+							Horsepower of your car:
+							<br>
+							<input type="number" id="horse-power" name="horse-power" min="50" max="1000">
+						</label>
 					</div>
-				</div>
-				<div class="box_bottom">
-					<div id="box_country">
-					<b>Country:</b>
-					<br>
-					<select id="country_id" name="country_id">
-						<option value="austria">Austria</option>
-						<option value="hungary">Hungary</option>
-						<option value="greece">Greece</option>
-					</select>
-					</div>
-					<div id="box_horsepower">
-					<b>Horse power of your car:</b>
-					<br>
-					<input id="horse_power" type="number" min="50" max="1000" name="horse_power">
-					</div>
-				</div>
-				<div class="box_result"
-					<div id="box_calc">
-					<input type="submit" id="calc_button" value="Calculate">
-					<br>
-					<br>
-					<h2 id="result"></h2>
+					<button id="form-button">
+						<h3>Calculate</h3>
+					</button>
+					<div id="result">
+						
 					</div>
 			</div>
 		</div> <!-- mainsection end -->
@@ -68,7 +71,7 @@
 			<p>starting with who and what is covered.</p>	
 		</div>
 		<div id="midsection">
-			<div class="box box1">
+			<div class="box">
 				<h3>What comes standard</h3>
 				<p>The coverage you need</p>
 				<ul>
@@ -79,7 +82,7 @@
 				<p>Benefits</p>
 				<p>12-month rate guarantee | 24/7 customer service | Lifetime Repair Guarantee</p>
 			</div>
-			<div class="box box1">
+			<div class="box">
 				<h3>Add-on protection & coverage</h3>
 				<p>For more peace of mind</p>
 				<ul>
