@@ -19,3 +19,5 @@ function calculateInsurance(get_name, get_horse_power, get_age) {
 }
 //output
 document.getElementById("calc_button").addEventListener('click', calculateInsurance, false);
+
+
