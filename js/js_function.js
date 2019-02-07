@@ -10,11 +10,11 @@ function calculateInsurance(get_name, get_horse_power, get_age) {
 	var get_country = document.getElementById("country_id").value;
 	//if statement for each country
 	if(get_country == "austria") {
-		document.getElementById("result").innerHTML = get_name + " ,your insurance costs: " + Math.floor(get_horse_power * 100 / age + 50);
+		document.getElementById("result").innerHTML = get_name + " ,your insurance costs: " + Math.floor(get_horse_power * 100 / get_age + 50);
 	} else if (get_country == "hungary") {
-		document.getElementById("result").innerHTML = get_name + " ,your insurance costs: " + Math.floor(get_horse_power * 120 / age + 100);
+		document.getElementById("result").innerHTML = get_name + " ,your insurance costs: " + Math.floor(get_horse_power * 120 / get_age + 100);
 	} else {
-	document.getElementById("result").innerHTML = get_name + " ,your insurance costs: " + Math.floor(get_horse_power * 150 / (age + 3) + 150);
+	document.getElementById("result").innerHTML = get_name + " ,your insurance costs: " + Math.floor(get_horse_power * 150 / (get_age + 3) + 150);
 	}
 }
 //output
