@@ -2,20 +2,28 @@
 // For Hungary: insurance = horse_power x 120 / age  + 100;
 // For Greece: insurance = horse_power x 150 / (age+3)  + 50;
 
-function calculateInsurance(get_name, get_horse_power, get_age) {
+function calculateInsurance() {
 	//define var to get the values from the input
 	var get_age = parseFloat(document.getElementById("age").value);
-	var get_horse_power = parseFloat(document.getElementById("horse_power").value);
-	var get_name = document.getElementById("name").value;
-	var get_country = document.getElementById("country_id").value;
+	var get_horse_power = parseFloat(document.getElementById("horse-power").value);
+	var get_name = document.getElementById("full-name").value;
+	var get_country = document.getElementById("form-selection").value;
 	//if statement for each country
+<<<<<<< HEAD
 	if(get_country == "austria") {
 		document.getElementById("result").innerHTML = get_name + " ,your insurance costs: " + Math.floor(get_horse_power * 100 / get_age + 50);
 	} else if (get_country == "hungary") {
+=======
+	if(get_country == "Austria") {
+		document.getElementById("result").innerHTML = get_name + " ,your insurance costs: " + Math.floor(get_horse_power * 100 / get_age + 50);
+	} else if (get_country == "Hungary") {
+>>>>>>> 4d164673c1be59a67000afffa631462d4b6d25e6
 		document.getElementById("result").innerHTML = get_name + " ,your insurance costs: " + Math.floor(get_horse_power * 120 / get_age + 100);
 	} else {
 	document.getElementById("result").innerHTML = get_name + " ,your insurance costs: " + Math.floor(get_horse_power * 150 / (get_age + 3) + 150);
 	}
 }
 //output
-document.getElementById("calc_button").addEventListener('click', calculateInsurance, false);
+document.getElementById("form-button").addEventListener('click', calculateInsurance, false);
+
+
